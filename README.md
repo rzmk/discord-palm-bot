@@ -8,7 +8,7 @@ A very simple [Discord](https://discord.com) bot that integrates with [Google's 
 
 - Chat with the PaLM API while saving the context of the conversation.
 - Simply prefix your prompt with `$ ` to have the bot respond to you in an ongoing chat.
-- The bot begins a brand new context every time the bot is restarted.
+- The bot persists the conversation context in a local `messages.txt` file so it can continue the conversation even if you restart the bot.
 - Generate text, code, and more with the PaLM API!
 
 This Discord bot is built with [discord.py](https://discordpy.readthedocs.io/en/stable/).
