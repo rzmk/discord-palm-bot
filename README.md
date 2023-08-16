@@ -6,16 +6,35 @@ A very simple [Discord](https://discord.com) bot that integrates with [Google's 
 
 ## ✨ Features
 
-- Chat with the PaLM API while saving the context of the conversation.
-- Simply prefix your prompt with `$ ` to have the bot respond to you in an ongoing chat.
-- The bot persists the conversation context in a local `messages.txt` file so it can continue the conversation even if you restart the bot.
-- Generate text, code, and more with the PaLM API!
+-   Chat with the PaLM API while saving the context of the conversation.
+-   Simply prefix your prompt with `$ ` to have the bot respond to you in an ongoing chat.
+-   The bot persists the conversation context in a local `messages.txt` file so it can continue the conversation even if you restart the bot.
+-   Generate text, code, and more with the PaLM API!
 
 This Discord bot is built with [discord.py](https://discordpy.readthedocs.io/en/stable/).
 
 ## 💡 Setup Tips
 
-You'll need access to the PaLM API which you can get by [joining the developer preview waitlist](https://developers.generativeai.google/) and receiving access through MakerSuite. Once you get access, generate an API key and save it in a `.env` file. You'll also need to [set up a Discord bot account](https://discordpy.readthedocs.io/en/stable/discord.html), make sure you enable the message content intent, and add your Discord bot token to the same `.env` file. You can easily do this by replacing the values in the `.env.example` file and renaming the file to `.env`.
+You'll need access to the PaLM API which you can get by [joining the developer preview waitlist](https://developers.generativeai.google/) and receiving access through MakerSuite.
+
+You'll also need to [set up a Discord bot account](https://discordpy.readthedocs.io/en/stable/discord.html) and a Discord bot with the following:
+
+-   Scopes
+    -   applications.commands
+    -   bot
+-   Permissions
+    -   Send Messages
+    -   Read Messages/View Channels
+-   Intents
+    -   Message Content Intent
+
+Your resulting invite link should look similar to this:
+
+```
+https://discord.com/api/oauth2/authorize?client_id=<bot-client-id>&permissions=3072&scope=bot%20applications.commands
+```
+
+Add your PaLM API key and Discord bot token to the same `.env` file, which you can do by replacing the values in the [`.env.example`](.env.example) file and renaming the file to `.env`.
 
 > Remember to keep your API keys secret!
 
@@ -27,8 +46,8 @@ Contributions are welcome! If you have any ideas or suggestions, please open an 
 
 Some documentation that may be useful include:
 
-- [PaLM API Python Client reference](https://developers.generativeai.google/api/python/google/generativeai)
-- [discord.py docs](https://discordpy.readthedocs.io/en/stable/)
+-   [PaLM API Python Client reference](https://developers.generativeai.google/api/python/google/generativeai)
+-   [discord.py docs](https://discordpy.readthedocs.io/en/stable/)
 
 ## 📝 License
 
