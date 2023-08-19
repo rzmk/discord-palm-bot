@@ -8,7 +8,7 @@ import google.generativeai as palm
 from dotenv import load_dotenv
 
 # Local imports
-from .config import get_config, set_config
+from .config import get_config
 
 # Config
 load_dotenv()
@@ -85,7 +85,6 @@ class PalmOutputGenerator:
             # Return response.
             return response.last
         except Exception as e:
-            # pprint(self.messages)
             print("Error generating response:")
             print(e)
             # If the last message was from the user, delete it from the message history.

@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 
 # Local imports
 from utils.ai import PalmOutputGenerator
-from utils.config import get_config, set_config
+from utils.config import get_config
 from utils.ui import LongMessageButtons
 from cogs.config import Config
 
