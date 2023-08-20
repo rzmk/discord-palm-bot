@@ -35,7 +35,7 @@ async def get_clean_prompt(client, message, name) -> str:
     return clean_prompt
 
 
-class PalmOutputGenerator:
+class ChatOutputGenerator:
     def __init__(self):
         self.messages = []
         # Create messages.jsonl if it doesn't exist.

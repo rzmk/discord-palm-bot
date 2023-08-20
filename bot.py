@@ -8,7 +8,7 @@ from discord.ext import commands
 from dotenv import load_dotenv
 
 # Local imports
-from utils.ai import PalmOutputGenerator
+from utils.ai import ChatOutputGenerator
 from utils.config import get_config
 from utils.ui import LongMessageButtons
 from cogs.config import Config
@@ -24,7 +24,7 @@ client = commands.Bot(
     command_prefix="$",
     intents=intents,
 )
-generator = PalmOutputGenerator()
+generator = ChatOutputGenerator()
 
 
 @client.event
