@@ -4,14 +4,14 @@ A [Discord](https://discord.com) bot that integrates with [LangChain](https://ww
 
 ## Table of Contents
 
--   [🎬 Demo](#🎬-demo)
--   [✨ Features](#✨-features)
--   [📖 Commands](#📖-commands)
--   [📚 Tech Stack](#📚-tech-stack)
--   [🛠 How to Setup](#🛠-how-to-setup)
--   [🌊 Docker Setup](#🌊-docker-setup)
--   [🤝 Contributing](#🤝-contributing)
--   [📝 License](#📝-license)
+-   [🎬 Demo](#-demo)
+-   [✨ Features](#-features)
+-   [📖 Commands](#-commands)
+-   [📚 Tech Stack](#-tech-stack)
+-   [🛠 How to Setup](#-how-to-setup)
+-   [🌊 Docker Setup](#-docker-setup)
+-   [🤝 Contributing](#-contributing)
+-   [📝 License](#-license)
 -   [Disclaimer](#disclaimer)
 
 ## 🎬 Demo
