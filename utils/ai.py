@@ -3,7 +3,6 @@ import json
 from os import getenv, path
 
 # Third-party imports
-from dotenv import load_dotenv
 from langchain.chat_models import ChatGooglePalm
 from langchain.schema import AIMessage, HumanMessage, SystemMessage
 
@@ -11,8 +10,9 @@ from langchain.schema import AIMessage, HumanMessage, SystemMessage
 from .config import get_config
 
 # Config
-load_dotenv()
 PALM_API_KEY = getenv("PALM_API_KEY")
+
+# Set up the chat model.
 chat_model = ChatGooglePalm(google_api_key=PALM_API_KEY)
 
 
@@ -49,7 +49,6 @@ class ChatOutputGenerator:
                     self.messages.append(HumanMessage(content=message_dict["content"]))
                 elif message_dict["author"] == "bot":
                     self.messages.append(AIMessage(content=message_dict["content"]))
-                # self.messages.append(message_dict)
 
     async def generate_chat_output(self, client, message, name):
         prompt = await get_clean_prompt(client, message, name)

@@ -5,15 +5,22 @@ from os import getenv
 import discord
 from discord import Message
 from discord.ext import commands
+
+# Load and check environment variables.
 from dotenv import load_dotenv
 
+load_dotenv()
+if not getenv("PALM_API_KEY"):
+    raise Exception("PALM_API_KEY environment variable is not set.")
+if not getenv("DISCORD_TOKEN"):
+    raise Exception("DISCORD_TOKEN environment variable is not set.")
+
 # Local imports
+from cogs.config import Config
 from utils.ai import ChatOutputGenerator
 from utils.config import get_config
 from utils.ui import LongMessageButtons
-from cogs.config import Config
 
-load_dotenv()
 
 DISCORD_TOKEN = getenv("DISCORD_TOKEN")
 
