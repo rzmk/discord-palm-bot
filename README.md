@@ -30,11 +30,9 @@ Other packages may be found in [`requirements.txt`](requirements.txt).
 
 ## 🛠 Installation
 
-1. Install [Python](https://www.python.org/downloads/) on your system.
+1. Access the PaLM API which you can get by [joining the developer preview waitlist](https://developers.generativeai.google/) and receiving access through MakerSuite.
 
-2. Access the PaLM API which you can get by [joining the developer preview waitlist](https://developers.generativeai.google/) and receiving access through MakerSuite.
-
-3. [Set up a Discord bot account and a Discord bot](https://discordpy.readthedocs.io/en/stable/discord.html) with the following settings:
+2. [Set up a Discord bot account and a Discord bot](https://discordpy.readthedocs.io/en/stable/discord.html) with the following settings:
 
 -   Scopes
     -   applications.commands
@@ -53,9 +51,11 @@ Your resulting invite link should look similar to this:
 https://discord.com/api/oauth2/authorize?client_id=<bot-client-id>&permissions=3072&scope=bot%20applications.commands
 ```
 
-4. Add your PaLM API key and Discord bot token to a `.env` file, which you can simply do by replacing the values in the [`.env.example`](.env.example) file and renaming the file to `.env`.
+3. Add your PaLM API key and Discord bot token to a `.env` file, which you can simply do by replacing the values in the [`.env.example`](.env.example) file and renaming the file to `.env`.
 
 > Remember to keep your API keys secret!
+
+4. Install [Python](https://www.python.org/downloads/) on your system.
 
 5. Install the necessary packages (preferably in [a virtual environment](https://realpython.com/python-virtual-environments-a-primer/)) with `pip install -r requirements.txt` and then run the bot with `python bot.py`.
 
