@@ -1,6 +1,6 @@
 # 🌴 discord-palm-bot
 
-A [Discord](https://discord.com) bot that integrates with [LangChain] to use [Google's PaLM API](https://developers.generativeai.google/) using the [PaLM 2 model](https://ai.google/discover/palm2/) through MakerSuite to provide an ongoing chat. It utilizes artificial intelligence to generate responses and engage in conversations.
+A [Discord](https://discord.com) bot that integrates with [LangChain](https://www.langchain.com/) to use [Google's PaLM API](https://developers.generativeai.google/) using the [PaLM 2 model](https://ai.google/discover/palm2/) through MakerSuite to provide an ongoing chat. It utilizes artificial intelligence to generate responses and engage in conversations.
 
 ![Bot Demo](demo.png)
 
