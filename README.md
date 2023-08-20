@@ -1,6 +1,6 @@
 # 🌴 discord-palm-bot
 
-A [Discord](https://discord.com) bot that integrates with [Google's PaLM API](https://developers.generativeai.google/) using the [PaLM 2 model](https://ai.google/discover/palm2/) through MakerSuite to provide an ongoing chat. It utilizes artificial intelligence to generate responses and engage in conversations.
+A [Discord](https://discord.com) bot that integrates with [LangChain] to use [Google's PaLM API](https://developers.generativeai.google/) using the [PaLM 2 model](https://ai.google/discover/palm2/) through MakerSuite to provide an ongoing chat. It utilizes artificial intelligence to generate responses and engage in conversations.
 
 ![Bot Demo](demo.png)
 
@@ -21,7 +21,7 @@ For more details use the `/help` command with the Discord bot.
 
 -   [Python](https://www.python.org/) - Programming language
 -   [discord.py](https://discordpy.readthedocs.io/en/stable/) - Python library for Discord API
--   [PaLM API Python Client](https://developers.generativeai.google/api/python/google/generativeai) - Python client for PaLM API
+-   [LangChain](https://www.langchain.com/) - LLM abstraction library
 -   [black](https://github.com/psf/black) - Python code formatter (using [the Visual Studio Code extension](https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter))
 
 Other packages may be found in [`requirements.txt`](requirements.txt).
@@ -70,7 +70,6 @@ Contributions are welcome! If you have any ideas, fixes, or suggestions, please 
 Some documentation that may be useful include:
 
 -   [discord.py docs](https://discordpy.readthedocs.io/en/stable/)
--   [PaLM API Python Client reference](https://developers.generativeai.google/api/python/google/generativeai)
 
 ## 📝 License
 
@@ -78,11 +77,11 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Disclaimer
 
-This bot and project are not affiliated with Google, MakerSuite, and Discord.
+This bot and project are not affiliated with Discord, Google, LangChain, and MakerSuite.
 
 By using this bot and/or project you acknowledge the following:
 
--   PaLM API output may generate content that may be inaccurate and does not reflect the views of the bot owner.
+-   The bot and AI output may generate content that may be inaccurate and does not reflect the views of the bot owner.
 -   The bot may generate inaccurate responses that seem factual but are not, and other false/inaccurate information.
 
 Please use responsibly.

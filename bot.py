@@ -3,7 +3,7 @@ from os import getenv
 
 # Third-party imports
 import discord
-from discord import Message, Thread
+from discord import Message
 from discord.ext import commands
 from dotenv import load_dotenv
 
@@ -42,7 +42,7 @@ async def on_message(message: Message):
     ) or message.content.startswith(f"{prefix} "):
         await message.channel.typing()
         # Generate the output message and send it.
-        output_message = await generator.generate_palm_output(client, message, bot_name)
+        output_message = await generator.generate_chat_output(client, message, bot_name)
         if output_message:
             if len(output_message) > 2000:
                 await message.reply(
