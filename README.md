@@ -72,7 +72,7 @@ https://discord.com/api/oauth2/authorize?client_id=<bot-client-id>&permissions=3
 
 > Remember to keep your API keys secret!
 
-> For Docker instructions skip to the [🌊 Docker Setup](#🌊-docker-setup) section.
+> For Docker instructions skip to the [🌊 Docker Setup](#-docker-setup) section.
 
 4. Install [Python](https://www.python.org/downloads/) on your system.
 
